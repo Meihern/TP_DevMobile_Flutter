@@ -6,4 +6,5 @@ Ce TP regroupe plusieurs applications :
   - Application de météo.
   - Application de gallérie.
   - Application de reconnaissance du texte.
+  - Application de QR Scanner.
 
