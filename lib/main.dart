@@ -1,7 +1,7 @@
 import 'package:first_app/camera.dart';
 import 'package:first_app/gallery.dart';
+import 'package:first_app/qrscan.dart';
 import 'package:first_app/weather-form.dart';
-import 'package:first_app/weather.dart';
 import "package:flutter/material.dart";
 import "./quizz.dart";
 void main() => runApp(MaterialApp(home: MyApp()));
@@ -56,6 +56,14 @@ class MyApp extends StatelessWidget{
                 onTap: (){
                   Navigator.of(context).pop();
                   Navigator.push(context, MaterialPageRoute(builder: (context)=> CameraPage()));
+                },
+              ),
+              Divider(color: Colors.grey, thickness: 2,),
+              ListTile(
+                title: Text("QR Code", style: TextStyle(fontSize: 20),),
+                onTap: (){
+                  Navigator.of(context).pop();
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> QrScanPage()));
                 },
               )
             ],
